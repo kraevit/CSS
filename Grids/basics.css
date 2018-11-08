@@ -1,0 +1,50 @@
+/* global styles */ 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* colors */
+.bg-benny-brown {
+  background-color: #7d6c5a;
+}
+
+.bg-dapper-dingo {
+  background-color: #e2c19c;
+}
+
+.bg-seafoam-green {
+  background-color: #cdd7b1;
+}
+
+.bg-cabbage {
+  background-color: #8ad8b8;
+}
+
+.bg-medium-turquoise {
+  background-color: #41d7c1;
+}
+
+.bg-isle-royale {
+  background-color: #80d3cc;
+}
+
+.grid-container > div {
+  padding: 0.2em;
+}
+
+/* Grid layout */
+.grid-container {
+  display: grid;
+  grid-template: repeat(2, 100px) / repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+
+
+
