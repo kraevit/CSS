@@ -1,5 +1,4 @@
 /* global styles */ 
-
 * {
   box-sizing: border-box;
 }
@@ -8,10 +7,6 @@ body {
   font-size: 30px;
   text-transform: uppercase;
   color: #fff;
-}
-
-body > * {
-  padding: 0.2em;
 }
 
 /* colors */
@@ -49,7 +44,3 @@ body > * {
   grid-template: repeat(2, 100px) / repeat(3, 1fr);
   grid-gap: 5px;
 }
-
-
-
-
