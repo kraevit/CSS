@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>justify/align-items</title>
+  <link rel="stylesheet" href="basic.css">
+
+  <style>
+
+    /* GRID */
+
+    .grid {
+
+      height: 100%;
+
+      display: grid;
+
+      grid-gap: 3px;
+
+      grid-template-columns: repeat(12, 1fr);
+
+      grid-template-rows: 40px 300px 40px;
+
+      /* justify-items */
+
+      justify-items: stretch; /* stretch(default) center start end */
+
+      /* align-items opposite */
+
+      /* align-items: center; */
+
+    }
+
+    .header {
+
+      grid-column: 1 / -1;
+
+    }
+
+    .menu {
+
+      grid-column: 1 / 3; /* because we are using 12 column grid */
+
+    }
+
+    .content {
+
+      grid-column: 3 / -1;
+
+      /* justify-self */
+
+      justify-self: center;
+
+      /* align-self */
+
+      align-self: center;
+
+    }
+
+    .footer {
+
+      grid-column: 1 / -1;
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+  <h1>justify/align-items</h1>
+  
+  <div class="grid">
+
+    <div class="header bg-brown">header</div>
+
+    <div class="menu bg-dingo">menu</div>
+
+    <div class="content bg-green">content</div>
+
+    <div class="footer bg-cabbage">footer</div>
+    
+  </div>
+
+</body>
+</html>
