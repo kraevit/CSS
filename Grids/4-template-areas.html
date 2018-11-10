@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template Areas</title>
+  <link rel="stylesheet" href="basic.css">
+
+  <style>
+
+    /* GRID */
+
+    .grid {
+
+      height: 100%; /* note! */
+ 
+      display: grid;
+
+      grid-gap: 5px;
+
+      grid-template-columns: repeat(12, 1fr);
+
+      /* grid-template-rows: 40px auto 40px; */
+
+      grid-template-rows: 40px 200px 40px;
+
+
+      /* Visual Grid Representation */
+
+      grid-template-areas:
+        "m h h h h h h h h h h ."
+        "m c c c c c c c c c c c"
+        "m . f f f f f f f f f f";
+    } 
+
+    /* Grid Area */
+   
+    .header {
+
+      grid-area: h;
+      
+    }
+    
+    .menu {
+
+      grid-area: m;
+
+    }
+    
+    .content {
+
+      grid-area: c;
+
+    }
+    
+    .footer {
+
+      grid-area: f;  
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+  <h1>Positioning items</h1>
+  
+  <div class="grid">
+
+    <div class="header bg-brown">header</div>
+
+    <div class="menu bg-dingo">menu</div>
+
+    <div class="content bg-green">content</div>
+
+    <div class="footer bg-cabbage">footer</div>
+  </div>
+
+</body>
+</html>
