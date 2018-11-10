@@ -1,24 +1,18 @@
-/* global styles */ 
+/* basic */ 
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-/* colors */
-.bg-benny-brown {
+/* backgrounds */
+.bg-brown {
   background-color: #7d6c5a;
 }
 
-.bg-dapper-dingo {
+.bg-dingo {
   background-color: #e2c19c;
 }
 
-.bg-seafoam-green {
+.bg-green {
   background-color: #cdd7b1;
 }
 
@@ -26,21 +20,17 @@ body {
   background-color: #8ad8b8;
 }
 
-.bg-medium-turquoise {
+.bg-turquoise {
   background-color: #41d7c1;
 }
 
-.bg-isle-royale {
+.bg-royale {
   background-color: #80d3cc;
 }
 
-.grid-container > div {
-  padding: 0.2em;
-}
-
-/* Grid layout */
-.grid-container {
-  display: grid;
-  grid-template: repeat(2, 100px) / repeat(3, 1fr);
-  grid-gap: 5px;
+div > div {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 350%;
 }
