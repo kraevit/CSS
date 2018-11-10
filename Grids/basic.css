@@ -30,7 +30,6 @@
 
 div > div {
   color: #fff;
-  font-size: 30px;
-  text-align: center;
-  line-height: 350%;
+  font-size: 2em;
+  padding-left: 0.2em;
 }
