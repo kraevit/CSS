@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Positioning items</title>
+  <link rel="stylesheet" href="basic.css">
+
+  <style>
+
+    /* GRID */
+
+    .grid {
+
+      height: 100%;
+
+      display: grid;
+
+      grid-gap: 3px;
+
+      /*  note! 
+
+          This Setup is Easier than 12 column Grid
+          when using Named Lines */
+
+      /* grid-template-columns: 1fr 5fr; */
+
+      /* grid-template-columns: 1fr [content-start] 5fr [content-end]; */
+
+      grid-template-columns: [main-start] 1fr [content-start] 5fr [content-end main-end];
+
+      /* grid-template-rows: 40px auto 40px; */
+
+      grid-template-rows: [main-start] 40px [content-start] 300px [content-end] 40px [main-end];
+
+    } 
+
+    .header {
+
+      /* grid-column: 1 / 3; */
+      
+      /* grid-column: main-start / main-end; */
+
+      /*  note! 
+          
+          When we use dash ( - ) syntax ( main-start ) 
+          we can simple do this: */
+
+          grid-column: main;
+
+    }
+
+    .menu {}
+
+    .content {
+
+      /* grid-column: 2 / 3; */
+
+      /* grid-column: content-start / content-end; */
+
+      /* grid-column: content; */
+
+      /*  note! 
+           
+          We can use grid-area only
+          when we have boxed area with content lines! */
+
+          grid-area: content;
+
+    }
+
+    .footer {
+
+      /* grid-column: 1 / 3; */
+
+      /* grid-column: main-start / main-end; */
+
+      grid-column: main;
+
+      /*  note! 
+          
+          IF we try to use grid-area here we will brake
+          entire layout because 
+          grid-area works only on boxed areas */ 
+
+          /* grid-area: main; */ 
+
+    }
+
+
+</style>
+
+</head>
+
+<body>
+
+  <h1>Positioning items</h1>
+  
+  <div class="grid">
+
+    <div class="header bg-brown">header</div>
+
+    <div class="menu bg-dingo">menu</div>
+
+    <div class="content bg-green">content</div>
+
+    <div class="footer bg-cabbage">footer</div>
+  </div>
+
+</body>
+</html>
