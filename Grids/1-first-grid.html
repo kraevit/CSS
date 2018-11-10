@@ -1,20 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>First Grid</title>
-  <link rel="stylesheet" href="basics.css">
+  <link rel="stylesheet" href="basic.css">
+
+  <style>
+    
+    /* GRID */
+
+    .grid {
+
+      display: grid;
+
+      /*
+
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px 100px; 
+
+      */
+
+      /* 
+
+      repeat() function
+
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 100px); 
+
+      */
+
+      /* shorthand */
+
+      grid-template: repeat(2, 100px) / repeat(3, 1fr)
+
+    }
+
+  </style>
+
 </head>
+
 <body>
-  <div class="grid-container">
-    <div class="bg-benny-brown">1</div>
-    <div class="bg-dapper-dingo">2</div>
-    <div class="bg-seafoam-green">3</div>
+
+  <h1>First Grid</h1>
+  
+  <div class="grid">
+    
+    <div class="bg-brown">1</div>
+
+    <div class="bg-dingo">2</div>
+
+    <div class="bg-green">3</div>
+
     <div class="bg-cabbage">4</div>
-    <div class="bg-medium-turquoise">5</div>
-    <div class="bg-isle-royale">6</div>
+
+    <div class="bg-turquoise">5</div>
+
+    <div class="bg-royale">6</div>
+
   </div>
+
 </body>
 </html>
