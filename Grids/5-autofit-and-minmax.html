@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>autofit and minmax function</title>
+  <link rel="stylesheet" href="basic.css">
+
+  <style>
+    
+    /* GRID */
+
+    .grid {
+
+      height: 100%; /* note! */
+
+      display: grid;
+
+      grid-gap: 3px;
+
+      /*  note! 
+
+          Explicit GRID - when you know how many columns you'll have */
+
+      /* grid-template-columns: repeat(6, 1fr); */
+
+      /* grid-template-columns: repeat(6, 100px); */
+
+
+      /*  note!
+
+          Implicit GRID - AUTO columns / rows */
+
+      /* auto-fit and minmax function */
+
+      /* add columns automatically ( auto-fit ) 
+      wich are at least 100px wide and max 1fr */
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+
+      grid-template-rows: repeat(3, 100px);
+
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Explicit vs Implicit - "auto-fit" and minmax()</h1>
+  
+  <div class="grid">
+    
+    <div class="bg-brown">1</div>
+
+    <div class="bg-dingo">2</div>
+
+    <div class="bg-green">3</div>
+
+    <div class="bg-cabbage">4</div>
+
+    <div class="bg-turquoise">5</div>
+
+    <div class="bg-royale">6</div>
+
+    <div class="bg-brown">7</div>
+
+    <div class="bg-dingo">8</div>
+
+    <div class="bg-green">9</div>
+
+    <div class="bg-cabbage">10</div>
+
+    <div class="bg-turquoise">11</div>
+
+    <div class="bg-royale">12</div>
+
+  </div>
+
+</body>
+</html>
