@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>justify-content and align-content</title>
+  <link rel="stylesheet" href="basic.css">
+
+  <style>
+    
+    /* GRID */
+
+    h1 { text-align: center; }
+
+    .grid {
+
+      margin: 0 auto;
+
+      max-width: 500px;
+
+      min-height: 500px;
+
+      border: 1px solid black;
+
+
+
+      height: 100%;
+
+      display: grid;
+
+      grid-gap: 5px;
+
+      grid-template-columns: repeat(3, 100px);
+      
+      grid-template-rows: repeat(2, 100px); 
+
+      justify-content: center; /* start center end space-between space-evenly space-around */
+      
+      align-content: center;   /* start center end */ 
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Justify Content and Align Content</h1>
+  
+  <div class="grid">
+    
+    <div class="bg-brown">1</div>
+
+    <div class="bg-dingo">2</div>
+
+    <div class="bg-green">3</div>
+
+    <div class="bg-cabbage">4</div>
+
+    <div class="bg-turquoise">5</div>
+
+    <div class="bg-royale">6</div>
+
+  </div>
+
+</body>
+</html>
