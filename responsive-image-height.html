@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <style>
+
+      /* Responsive Image Height CSS Tutorial */
+
+      body { 
+        margin: 0; 
+      }
+      
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      /*
+        Original Image has size of 640x960
+        Aspect Ration as a Percentage = 150%
+        960 (height) / 640 (width) = 1.5 === 150%
+      */
+
+      .bg-image {
+        background: url("responsive.jpg") no-repeat center;
+        background-size: contain;
+        width: 100%;
+
+        /*
+        960 (width) * 1.5 = 1440px
+        height: 1440px;
+        */ 
+        
+        padding-top: 150%;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="bg-image"></div>
+    </main>
+  </body>
+</html>
